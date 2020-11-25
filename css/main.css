@@ -1,0 +1,578 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  padding: 1.5rem 1.5rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__logo {
+  padding-top: 5px;
+  margin-right: 2.8rem !important;
+}
+
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav li {
+  margin-right: 2.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.header__nav li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.header__nav li.signUp {
+  font-weight: 700;
+  padding: 0.4rem 1.5rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+  opacity: 1;
+}
+
+.header__nav li.signUp:hover {
+  opacity: 0.8;
+}
+
+.mainContent {
+  position: relative;
+}
+
+.mainContent .banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainContent .banner__image {
+  width: 140%;
+  object-fit: contain;
+  padding-left: 1rem;
+}
+
+.mainContent .banner__text {
+  padding: 1rem;
+  text-align: center;
+}
+
+.mainContent .banner__text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 0.5rem;
+  color: #232127;
+}
+
+.mainContent .banner__text p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0.2rem 0 1.8rem;
+  color: #bfbfbf;
+  padding: 0 0.8rem;
+}
+
+.mainContent .banner__text button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+}
+
+.mainContent .linkInput {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.4rem;
+  border-radius: 8px;
+  background: #3b3054 url("../images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  transform: translateY(50%);
+  margin-top: -1rem;
+}
+
+.mainContent .linkInput__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent .linkInput__form input {
+  font-size: 0.9rem;
+  padding: 0.3rem 1.5rem;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.mainContent .linkInput__form button {
+  font-size: 1rem;
+  font-weight: 700;
+  height: 40px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+  cursor: pointer;
+}
+
+.features {
+  background-color: #efefef;
+  padding: 9rem 2rem 3rem;
+  text-align: center;
+}
+
+.features__header {
+  padding: 0.5rem;
+}
+
+.features__header h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #232127;
+  margin-bottom: 1rem;
+}
+
+.features__header p {
+  color: #9e9aa7;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.features__cards {
+  position: relative;
+}
+
+.features__cards-line {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  height: 90%;
+  width: 8px;
+  background-color: #2acfcf;
+  transform: translateX(50%);
+}
+
+.card {
+  z-index: 2;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 5rem;
+  padding: 3rem 1.5rem 2rem;
+  position: relative;
+}
+
+.card__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3b3054;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: calc(-3rem - 30px) auto 2rem;
+}
+
+.card__image img {
+  object-fit: contain;
+  max-width: 30px;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #232127;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #9e9aa7;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.getStarted {
+  padding: 4rem 1rem;
+  background: #3b3054 url("../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  text-align: center;
+}
+
+.getStarted h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.getStarted button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+}
+
+.footer {
+  background-color: #35323e;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer__main .footer__logo {
+  margin: 3rem auto 2rem;
+}
+
+.footer__main .links ul {
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.footer__main .links ul li {
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  opacity: 0.8;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.footer__main .links ul li:hover {
+  transform: scale(1.01);
+  opacity: 0.6;
+}
+
+.footer__main .links ul .listHead {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.footer__main .socialLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__main .socialLinks a {
+  margin-right: 1rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.footer__main .socialLinks a svg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  fill: white;
+}
+
+.footer__main .socialLinks a svg:hover {
+  transform: scale(1.1);
+  fill: #2acfcf;
+}
+
+.footer__attribution {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.footer__attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__attribution .brandLogo {
+  width: 70px;
+  margin-bottom: -10px;
+}
+
+@media screen and (max-width: 53.125rem) {
+  .header {
+    padding: 0.8rem 1.5rem 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .header__logo {
+    padding-top: 5px;
+  }
+  .header .menu-btn {
+    position: relative;
+    z-index: 1;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    width: 28px;
+    height: 3px;
+    background: #3b3054;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: #3b3054;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: #3b3054;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+  }
+  .header .menu-btn__burger.open::before {
+    transform: rotate(45deg) translate(5px, 8px);
+  }
+  .header .menu-btn__burger.open::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+  }
+  .header .header__nav {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 80%;
+    margin: 0 10%;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    background-color: #3b3054;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  .header .header__nav.open {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .header .header__nav ul {
+    padding: 0.3rem;
+    display: block;
+  }
+  .header .header__nav li {
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+  }
+  .header .header__nav li:hover {
+    color: #2acfcf;
+  }
+  .header .header__nav li.signUp {
+    font-weight: 700;
+    padding: 0.4rem 1.5rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #2acfcf;
+  }
+  .header .header__nav li.signUp:hover {
+    color: #2acfcf;
+    background-color: white;
+  }
+  .header .header__nav .nav__page {
+    border-bottom: 1px solid #9e9aa7;
+  }
+}
+
+@media screen and (min-width: 53.125rem) {
+  .mainContent {
+    margin-top: 2rem;
+  }
+  .mainContent .banner {
+    overflow: visible;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-left: 5%;
+    margin-left: 0;
+  }
+  .mainContent .banner__image {
+    margin-right: -20%;
+  }
+  .mainContent .banner__text {
+    text-align: left;
+  }
+  .mainContent .banner__text button {
+    margin-left: 1rem;
+  }
+  .mainContent .linkInput {
+    padding: 3rem;
+    background: #3b3054 url("../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .mainContent .linkInput__form {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .mainContent .linkInput__form input {
+    flex: 1;
+    margin: 0;
+    margin-right: 1rem;
+    border-radius: 6px;
+  }
+  .mainContent .linkInput__form button {
+    border-radius: 6px;
+  }
+  .features__header {
+    margin-bottom: 2rem;
+  }
+  .features__header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+  }
+  .features__header p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .features__cards {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .features__cards-line {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    width: 90%;
+    height: 8px;
+    background-color: #2acfcf;
+    transform: translateY(50%);
+  }
+  .features__cards .card {
+    height: fit-content;
+  }
+  .card:nth-child(1) {
+    margin-top: 0rem;
+  }
+  .card:nth-child(2) {
+    margin-top: 3rem;
+  }
+  .card:nth-child(3) {
+    margin-top: 6rem;
+  }
+  .card:nth-child(4) {
+    margin-top: 9rem;
+  }
+  .card:nth-child(1) {
+    margin-right: 2rem;
+  }
+  .card:nth-child(2) {
+    margin-right: 2rem;
+  }
+  .card:nth-child(3) {
+    margin-right: 2rem;
+  }
+  .getStarted {
+    background: #3b3054 url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .getStarted h2 {
+    font-size: 2rem;
+  }
+  .footer__main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer__main .links {
+    display: flex;
+  }
+  .footer__main .links ul {
+    margin-right: 3rem;
+  }
+  .footer__main .footer__logo {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
